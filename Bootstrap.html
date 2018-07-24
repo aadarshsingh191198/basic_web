@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Some Knowledge on Bootstrap
+	</title>
+	
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="Bootstrap.css">
+	<script type="text/javascript" src="Bootstrap And jQuery Files/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div>
+		<div class="wrapper important_text">Partnerships</div>
+		<div class="wrapper">
+			<ul>
+			<li>Lorem</li>
+			<li>Ipsum</li>
+			<li>siet</li>
+			<li>otor</li>
+		</ul>
+		</div>
+		<mark>The properties of the class which is defined later in the css stylesheet are more given more preference </mark>
+	</div>
+	<<hr>
+	<div>
+		<img class="img-responsive" src="Size_chart.png" id="size">
+	</div>
+	<mark>Resize the page to see the effect</mark>
+	<div>
+		<ol>
+		
+		<li class="visible-lg">Visible large devices</li>
+		<li class="visible-md">Visible medium devices</li>
+		<li class="visible-sm">Visible small devices</li>
+		<li class="visible-xs">Visible extra small devices</li>
+
+		</ol>
+		<ol>
+
+		<li class="hidden-lg">Hidden large devices</li>
+		<li class="hidden-md">Hidden medium device</li>
+		<li class="hidden-sm">Hidden small devices</li>
+		<li class="hidden-xs">Hidden extra small devices</li>
+
+		</ol>
+	</div>
+	<hr>
+	<div>
+		The effect of container classs and container fluid class:
+
+		<h2 class="container bg">Hello this is a container.</h2>
+		<hr>
+		<h2 class="container-fluid bg">But this one's a container fluid class.</h2>
+	</div>
+	<hr>
+	<div>
+		Wanna see a jumbotron?
+		<div class="container">
+			<form class="jumbotron">
+				<input type="text" name="name">
+				<input type="submit" value="Hey!">
+				<p>Submit and send a hi to a jumbotron....</p>
+			</form>
+		</div>
+	</div>
+	<hr>
+	<div id="glyphicons" class="container">
+		What is a glyphicon?
+		<h3>User<span class="glyphicon glyphicon-user"></span></h3>
+		<h3>Search<span class= "glyphicon  glyphicon-search"></span></h3>
+		<h3>OK<span class="glyphicon  glyphicon-ok"></span></h3>
+
+		More to go...
+
+		<div>
+			<img class="img-responsive" src="1.PNG" alt=""><hr>
+			<img class="img-responsive" src="2.PNG" alt="cannot display"><hr>
+			<img class="img-responsive" src="3.PNG" alt="cannot display"><hr>
+		</div>
+	</div>
+	<hr>
+	<div class="table-responsive">
+		<table class="container table table-striped table-bordered">
+		<tr id="t_head">
+			<th>Name</th>
+			<th class="Head_2">First Appearance</th>
+			<th>Abilities</th>
+		</tr>
+		<tr>
+			<td>First</td>
+			<td>Movie x</td>
+			<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore aspernatur dolores officia perspiciatis blanditiis sunt, culpa deserunt corrupti consequuntur nobis facilis quos, iste repellat in doloremque. Quod ullam, laudantium id!</td>
+		</tr>
+		<tr>
+			<td>Second</td>
+			<td>Movie y</td>
+			<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem necessitatibus corporis nulla sapiente modi commodi dolore maxime, sequi, accusantium nisi ipsam laboriosam temporibus molestias recusandae, veniam assumenda quod in perspiciatis.</td>
+		</tr>
+		<tr>
+			<td>Third</td>
+			<td>Movie z</td>
+			<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia possimus, impedit consequatur debitis repellendus quos odio dolorum ipsam, in atque magnam quis! Eum nesciunt assumenda pariatur, amet porro iusto, ducimus!</td>
+		</tr>
+		<tr>
+			<td>Fourth</td>
+			<td>Movie a</td>
+			<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sit, totam in, excepturi debitis dolorum vero non quod illo sapiente omnis iste voluptatum fugit nam expedita veritatis ab, autem, maiores.</td>
+		</tr>
+		<tr>
+			<td>Fifth</td>
+			<td>Movie b</td>
+			<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit iure facilis modi minus illum voluptas quos, alias ipsam earum deserunt impedit neque corrupti nemo quis, expedita aliquid similique et iusto!</td>
+		</tr>
+		
+		</table>
+	</div>
+		table: To insert general table styles
+		table-striped : To generated alternatively shaded rows
+		table-bordered : To make the border around the table
+		table-hover : Highlights the rows of tables on hovering
+
+		<mark>table-responsive : To add a scrollbar when the screen is reduced much in size (attribute to be added in the div containing  the class)</mark>
+	<hr>
+	<div class="container">
+		<div id="grid">
+			<h2>This is grid structure</h2>
+			<div class="col-sm-3 col-md-6">Hello</div>
+			<div class="col-sm-9 col-md-6">Brother</div>
+		</div>
+		
+		<div id="grid_offset">
+			<h2>This is grid structure</h2>
+			<div class="col-sm-3 col-md-4">Hello</div>
+			<div class="col-sm-9 col-md-offset-4 col-md-4">Brother</div>
+		</div>
+
+
+		<div id="proper_grid">
+			<h2>This is a proper grid structure with each column set enclosed in a row</h2>
+			<div class="col-sm-3 col-md-5">Hello</div>
+			<div class="col-sm-9 col-md-offset-2 col-md-5">Brother</div>
+		</div>
+	</div>
+	<hr>
+	<div class="container">
+		To show how image can be responsive<br>
+		<img src="23.jpg" class="img-responsive img-thumbnail img-rounded img-circle " alt="responsive image">
+		img-responsive : To make the image responsive<br>
+		img-thumbnail : To surround the image with a border line<br>
+		img-circle : To make the circle<br>
+		img-rounded : To make the vertices of image curved.<br>
+	</div>
+	<hr>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<a href="#">
+						<img src="img.jpg" alt="Nothing">
+					</a>
+					<div class="caption">
+						<h3>Name</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<a href="#">
+						<img src="img.jpg" alt="Nothing">
+					</a>
+					<div class="caption">
+						<h3>Name</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<a href="#">
+						<img src="img.jpg" alt="Nothing">
+					</a>
+					<div class="caption">
+						<h3>Name</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		How to use form?<br>
+		1.Use it in a row and a column and then to each input attribute add the class "form-control" to stretch the elements<br>
+		2.For buttons use class "btn"(For applying mast button styles) and "btn-block"(For stretching the button to full length available instead of only matching parent ).<br>
+		3.Some other button related classes are btn-default btn-warning btn-danger btn-success btn-info btn-primary(Saare farzi hain ... COlor ke alawa ghanta kuchh karte hain)<br>
+		<div class="row">
+			<div class="col-xs-4">
+				<form action="post">
+					<fieldset>
+						<legend>FieldSet's Legend(Things are different from HTML)</legend>
+						<input type="text" class="form-control"  placeholder="First Name"><br>
+						<input type="text" class="form-control" placeholder="Last Name"><br>
+						<input type="submit" value="Submit" class="btn btn-primary btn-block">
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="container">
+		How to use panel?<br>
+		1.Use it in a row and a column <br>
+		2.For panels use class "panel"(For applying mast panel style)<br>
+		3.Some other panel related classes are :panel-default panel-warning panel-danger panel-success panel-info panel-primary(Saare farzi hain ... COlor ke alawa ghanta kuchh karte hain)<br>
+		<div class="row">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="panel panel-warning">
+					<div class="panel-heading"><h2>Panel Header</h2></div>
+					<div class="panel-body">
+						<p>I am the panel body Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid obcaecati, maiores consectetur eligendi deserunt vero inventore rerum cum tempore expedita quae labore libero debitis distinctio, explicabo vitae quasi, culpa! Libero.</p>
+						<button class="btn-info btn btn-block">Press Me</button>
+					</div>
+					<div class="panel-footer">Panel Footer</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">My website</a>
+			</div>
+			<div >
+				<ul class="hidden-md nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-phone"></span> Contact</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<mark >It's not yet done ... Learn about <b>modals</b> and <b>nav_bars</b> more</mark>
+
+</body>
+</html>

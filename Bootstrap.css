@@ -1,0 +1,32 @@
+.wrapper{
+	font-size: 14px;
+	font-family: sans-serif;
+}
+.important_text{
+	font-size: 20px;
+	font-weight: bold;
+}
+#size{
+	border:2px black groove;
+	border-radius: 5px;
+}
+.bg{
+	background-color: pink;
+}
+.jumbotron input,p{
+	height:50px;
+}
+#grid{
+	border-collapse: collapse;
+
+}
+#grid div,#proper_grid div,#grid_offset div{
+	border:1px solid black;
+	border-collapse: collapse;
+}
+h3{
+	text-align: center;
+}
+mark{
+	background-color: yellow;
+}
