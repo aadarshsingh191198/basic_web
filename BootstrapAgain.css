@@ -1,0 +1,22 @@
+p{
+	font-size: 20px;
+	font-family: "Comic Sans MS";
+}
+
+/*li{
+	list-style-type: none;
+}*/
+
+.pink{
+	background-color: pink;
+	border:2px solid purple;
+}
+
+.orange{
+	background-color: orange;
+	border:1px dashed red;
+}
+
+.bdr{
+	margin: 10px;
+}

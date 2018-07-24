@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Test</title>
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="BootstrapAgain.css">
+
+</head>
+<body>
+	<h2>Bootstrap Buttons</h2>
+	<p>
+		It can be used on input, a, button tags
+	</p>
+	<ul>
+		<li><button class="btn btn-default btn-xs">Default extra small</button></li>
+		<li><button class="btn btn-danger btn-xs">Danger</button></li>
+		<li><button class="btn btn-success btn-xs">Success</button></li>
+		<li><button class="btn btn-info btn-xs">Info</button></li>
+		<li><button class="btn btn-default btn-lg">Default Large</button></li>
+		<li><button class="btn btn-link btn-xs">Link</button></li>
+		<li><a href="#" class="btn btn-primary active">Primary Active button</a></li>
+		<li><a href="#" class="btn btn-warning disabled">Warning disabled button</a></li>
+	</ul>
+
+	<div class="jumbotron">
+		<h3>
+			This is a jumbotron
+		</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius at vel reiciendis quaerat maxime repudiandae exercitationem facilis, ducimus, expedita dignissimos temporibus sequi nobis qui odio harum eum obcaecati molestiae. Odio!
+		</p>
+		<button class="btn btn-default">Click Me</button>
+	</div>
+	<div class="container">
+		<h2>Same jumbotron in a container</h2>
+		<div class="jumbotron">
+		<h3>
+			This is a jumbotron
+		</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius at vel reiciendis quaerat maxime repudiandae exercitationem facilis, ducimus, expedita dignissimos temporibus sequi nobis qui odio harum eum obcaecati molestiae. Odio!
+		</p>
+		<button class="btn btn-default">Click Me</button>
+	</div>
+	
+	<h1>Forms</h1>
+	<ol>
+		<li>
+			<p>
+			Two Most important Classes: <br>
+			Form group (To group input and label)<br>
+			Forom Control(To shif the input to next line and form a proper focus border and a rounded corners and all)
+			</p>
+				<form>
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" class="form-control" name="email" id="email">
+			</div>
+			<div class="form-group">
+				<label for="password">Password:</label>
+				<input type="password" class="form-control" name="password" id="password">
+			</div>
+			<div class="form-group">
+				<label for="file">Choose File: </label>
+				<input type="file" class="form-control" name="file" id="file">
+			</div>
+			<div class="form-group">
+				<label><input type="checkbox"  id="checkbox" name="checkbox" required>I agree to the conditions.</label>		
+			</div>
+			<button class="btn btn-default">Submit</button>
+			</form>
+		</li>
+		<li>
+			<p>
+				Same form with form-inline class.
+			</p>
+			<form class=form-inline>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" class="form-control" name="email" id="email">
+					</div>
+					<div class="form-group">
+						<label for="password">Password:</label>
+						<input type="password" class="form-control" name="password" id="password">
+					</div>
+					
+					<div class="form-group">
+						<label><input type="checkbox"  id="checkbox" name="checkbox" required>I agree to the conditions.</label>		
+					</div>
+					<button class="btn btn-default">Submit</button>
+			</form>
+		</li>
+	</ol>
+
+	</div>
+
+
+	<h2>Nav bars</h2>
+
+	<p>
+		Putting the nav bar in a container is not so good...As that will cut it off.. INstead put the contents of the nav bar inside the container div
+	</p>
+	<h3>Instance 1</h3>
+	<div class=container>
+		<nav class="navbar navbar-default">
+			<ul class="nav navbar-nav">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	<h3>Instance 2</h3>
+	<nav class="navbar navbar-default">
+		<div class=container>
+			<ul class="nav navbar-nav">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+
+	<h2>A proper nav bar</h2>
+	<nav class= "navbar navbar-default">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand">M/S Singh</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Story</a></li>
+		</ul>
+
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Sign Up</a></li>
+			<li><a href="#">Login</a></li>
+		</ul>
+	</nav>
+	<h2>A navbar with class navbar-inverse and contents inside the container</h2>
+	<nav class= "navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">M/S Singh</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Story</a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Sign Up</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+		</div>
+	</nav>
+	<h2>A perfect nav bar</h2>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Brand</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#">Link</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">One more separated link</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	      <form class="navbar-form navbar-left">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit</button>
+	      </form>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">Link</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<p>
+		Note that the dropdown and the hamburger won't work properly without addtion of the bootstrap javascript.<br>
+		And the bootstrap javascript won't work without jquery.
+	</p>
+
+	<h2>Hiding the collapsible items for mobile view</h2>
+	<p>
+		Put the content to be compressed in the div with class="collapse navbar-collapse" and set the id to something...It will be useful(Trust me!) Enter the same id in the <strong>data target </strong>attribute
+	</p>
+	<nav class= "navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">M/S Singh</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Story</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<p>Now for toggling and bringing the button the btton code will have to be brought in</p>
+	<p>For that we have to bring in the button code in the header</p>
+	<nav class= "navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+
+			<!-- Code for toggling to be added in the header -->
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-nav-button" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+				<a href="#" class="navbar-brand">M/S Singh</a>
+			</div>
+			<div class="collapse navbar-collapse" id="my-nav-button">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Story</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<p>
+		Note that the 3 bars that you see are made through HTML, we can change it to  anything we want by playing around with the spans in the code that we just added.
+	</p>
+
+	<nav class= "navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-nav-button2" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span >+</span>
+		      </button>
+				<a href="#" class="navbar-brand">M/S Singh</a>
+			</div>
+			<div class="collapse navbar-collapse" id="my-nav-button2">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Story</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<p>
+		PS:Be a bit careful with the id given to the div class.
+	</p>
+
+
+	<h2>Adding the grid system</h2>
+	<p>The border and the color have been addded to identify the grid</p>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 pink">COL_LG_6</div>
+			<div class="col-lg-6 pink">COL_LG_6</div>
+		</div>
+	</div>
+
+	<p>
+		There are four different sizes viz.<strong>pc small-laptop tablet mobile </strong><br>
+		Corresponding we hav four different sizes in the grid system: <strong>lg>md>sm>xs</strong>
+	</p>
+	
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL_LG_1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL_LG_1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL_LG_1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL_LG_1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL_LG_1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL_LG_1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL_LG_1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL_LG_1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL_LG_1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL_LG_1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL_LG_1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL_LG_1</div>
+		</div>
+	</div>
+	
+
+	<p>
+		PS:NOte that one row contains 12,6,4,3 columns at lg , md, sm, xs breapoints respectively.
+	</p>
+
+	<h2>Another example</h2>
+	<p>
+		The responsiveness goes like this: lg:1 row 4 elements, sm:1 row 2 elements, xs:1 row 1 elements.
+	</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">Content</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">Content</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">Content</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">Content</div>
+		</div>
+	</div>
+
+	<p>
+		PS: If you have set the breakpoint for a smaller screen size same as that of a largere one thaen the larger becomes redundant..As is the case in the above example(col-lg-3 is redundant)
+	</p>
+
+	<p>You can have nested grids too</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">
+				<div class="row">
+					<div class="col-lg-6 orange">Hello</div>
+					<div class="col-lg-6 orange">World</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">Content</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">Content</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">Content</div>
+		</div>
+	</div>
+
+	<div class="bdr">
+		<img src="photo.jpg" class="img-responsive img-thumbnail img-rounded">
+	</div>
+		<!-- ______________________________________________________________________________________________________________________________________________________ -->
+	<!-- _______________________________________________________________________________________________________________________________________________________-->
+
+
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="bootstrap.js"></script>
+
+
+</body>
+</html>

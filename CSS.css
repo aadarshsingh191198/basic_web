@@ -1,0 +1,144 @@
+.External{
+	background-color: pink;
+	font-family: verdana;
+	
+}
+p span{
+	background-color: pink;
+}
+ #div #li{
+	background-color: purple;
+}
+
+#ID1, #ID2, #ID3{
+	background-color: maroon;
+}
+
+#trans{
+	text-transform: uppercase;
+}
+
+span{
+			border: 2px groove black;
+			list-style: none;           
+			width : 960px;
+			background-color: maroon;
+		}
+		#li{
+			background-color: grey;
+			/*list-style-type:none;*/
+			display: block;
+			padding: 2px 10px;
+			border: 2px groove black;
+			border-radius: 5px 5px 0px 0px;
+			float : left;
+			margin : 0px auto;
+		}
+	
+
+		.img2{
+			height : 200px;
+			width : 350px;
+
+			float: right;
+		}
+		.imgr{
+			
+			float: right;
+		}
+
+		.imgl{
+			margin : -5px;
+			margin-right: 2px; 
+			float: left;
+		}
+		.Internal{
+			background-color: yellow;
+			font-family: monospace;
+
+		}
+		a:link{
+			text-decoration: none;
+			color: cyan;
+		}
+
+		a:visited{
+		 
+			color: purple;
+		}
+		a.link:hover{
+			border-color: maroon;
+			padding: 2px 20px;
+			border-radius: 5px;
+			background-color: white;
+			color: red;
+
+		}
+		a:hover{
+			border-color: maroon;
+			padding: 2px 20px;
+			border-radius: 5px;
+			background-color: white;
+			color: red;
+			font-size: 20px;
+		}
+		a:active{
+			 
+			color: blue;
+		}
+
+		ol{
+			font-size: 23px;
+			background-color: "#987769";
+		}
+		.class{
+			font-family: arial;
+		}
+		p {
+			background-color: "#044595";
+		}
+		.tran:hover{
+			background-color: blue;
+		}
+		  .fader2 td {
+    background-color: red;
+    transition-timing-function: cubic-bezier(1,0,1,0);
+    transition-duration: 0.5s;
+  }
+  .fader2:hover td { background-color: green; }
+
+
+  	#transform:hover{
+  		transform : rotate(15deg);
+  	}
+
+  	#transform1:hover{
+  		transform-origin: center top;
+  		transform : rotate(-15deg);
+  	}
+
+  	#transform2:hover{
+  		transform : rotate(360deg);
+  	}
+
+  	#transform3:hover{
+  		transform-origin: 50% 50%;
+  		transform : rotate(480deg);
+  	}
+
+  	#transform4:hover{
+  		transform : translate(100px , -50px);
+  	}
+  	#transform5:hover{
+  		transform : translate(50px , 0px);
+  	}
+
+  	#transform6:hover{
+  		transform: scale(2,2);
+  	}
+  	#transform7:hover{
+  		transform: skewX(-22deg);
+  	}
+  	#transform8:hover{
+  		transform: skew(-35deg,-25deg);
+  	}
