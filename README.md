@@ -5,4 +5,4 @@ A repository that contains easy ways to revise html, css and bootstrap
 
 2.To revise CSS ... `CSS.html`
 
-3.To revise Bootstrap ...  `BootstrapAgain.html`
+3.To revise Bootstrap ...  `Bootstrap.html` and `BootstrapAgain.html`
